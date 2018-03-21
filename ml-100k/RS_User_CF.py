@@ -39,6 +39,7 @@ class  User_based_CF:
         if self.similarity[uid1][uid2]!=-1:  #如果已经计算好
             return self.similarity[uid1][uid2]  
         
+        #有效的活动
         si={}  
         for item in self.ItemsForUser[uid1]:  #uid1所有打过分的Item1
             if item in self.ItemsForUser[uid2]:  #如果uid2也对该Item打过分
